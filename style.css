@@ -1,0 +1,9 @@
+blockquote {
+    color: gray;
+    border-left-color: #c2c6cf;
+    border-left-style: solid;
+    border-left-width: 3px;
+}
+code {
+    font-family: ui-monospace, "Consolas", "SF Mono", Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", monospace;
+}

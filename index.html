@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'; style-src 'self'; default-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests; require-trusted-types-for 'script'; trusted-types 'none';">
+    <meta name="referer" content="strict-origin-when-cross-origin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于饺子服务器内的各种问题[进阶]</title>
+    <base target="_blank">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>关于饺子服务器内的各种问题[进阶]</h1>
+      <h2>目录</h2>
+      <ol>
+        <li><a href="#概况">服务器概况</a></li>
+        <li>
+          <a href="#事项">服务器的禁止/注意事项</a>
+          <ol>
+            <li><a href="#禁止">禁止事项</a></li>
+            <li><a href="#注意">注意事项</a></li>
+          </ol>
+        </li>
+        <li><a href="#进入">如何进入服务器</a></li>
+        <li>
+          <a href="#指令">服务器常用指令</a>
+          <ol>
+            <li><a href="#登录指令">登录用指令</a></li>
+            <li><a href="#warp指令">warp指令</a></li>
+            <li><a href="#home指令">home指令</a></li>
+            <li><a href="#bal指令">bal指令</a></li>
+            <li><a href="#fly指令">fly指令</a></li>
+          </ol>
+        </li>
+        <li><a href="#qa">新手常见问题</a></li>
+      </ol>
+      <blockquote><i>在阅读以下内容之前，请确保您拥有基础电脑技术，例如学会查阅Github，解压缩文件，在百度里找到官方链接等</i></blockquote>
+    </header>
+    <main>
+      <h2 id="概况">服务器基本概况简介</h2>
+      <ul>
+        <li>本服务器主要类型为Fabric模组服，生存养老，允许生存，建筑，红石生电，PVP</li>
+        <li>服务器种子码为：5137322700759458547，可以用<a href="https://www.chunkbase.com">Chunk Base</a>的<a href="https://www.chunkbase.com/apps/seed-map">Seed Map</a>查询你想要的地形</li>
+        <li>游戏版本为<a href="https://zh.minecraft.wiki/w/Java%E7%89%881.21.11">1.21.11</a></li>
+        <li>模组加载器为<a href="https://fabricmc.net">Fabric</a></li>
+        <li>游戏内有许多建筑，允许打卡拍照，如果有建筑改动的建议请联系建筑人，请勿擅自修改</li>
+      </ul>
+      <h2 id="事项">服务器的禁止/注意事项</h2>
+      <h3 id="禁止">服务器禁止事项</h3>
+      <ul>
+        <li>禁止熊孩子，禁止恶意破坏</li>
+        <li>禁止在末地种蘑菇！</li>
+        <li>禁止在末地祭坛做杀凋机</li>
+        <li>禁止刷怪笼里养鸡</li>
+        <li>禁止大量养生物</li>
+        <li>禁止远距离携带放置蜂巢</li>
+        <li>禁止做卡服机、禁人书禁人塔</li>
+        <li>禁止对着拉杆一直快速右键</li>
+        <li>禁止开挂，若发现开挂会被永久封禁</li>
+        <li>禁止用tweakeroo更改飞行速度，否则问候你祖宗十八代（<b>服主原话</b>）</li>
+        <li>别跑末地环了，我电脑硬盘就p点大，不想玩你就跑吧（<b>服主原话</b>）</li>
+        <li>禁止跑图（服务器是云服，硬盘只有50G）</li>
+      </ul>
+      <h3 id="注意">服务器注意事项</h3>
+      <ul>
+        <li>做飞行器轰炸机世吞此类机器需上报，别放飞了</li>
+        <li>做轨道炮、各类炮需上报</li>
+        <li>别长时间挂机地狱门加载器</li>
+        <li>低y手砍盔甲架处死，挂机做好防蝙蝠</li>
+        <li>不要在新玩家第一次进入服务器的主城大坑旁边建造自己的基地</li>
+        <li>不要跑图，不要跑图，不要跑图！</li>
+        <li>服务器允许使用矿透，灵魂出窍，生物雷达等<br>若您认为某个模组提供的功能不能明确区分是否超出这些范围，建议私聊询问群管理员或服主。</li>
+      </ul>
+      <h2 id="进入">如何进入服务器</h2>
+      <p>在启动游戏后，点击多人游戏，然后点击添加服务器，第一栏服务器名称可改可不改，第二栏服务器IP：<code>43.248.3.136:11451</code></p>
+      <p>在添加好服务器后，进入服务器可能会出现以下问题，解决方法见问题的下方（<b>点击展开</b>）：</p>
+      <ul>
+        <li><details>
+          <summary>服务器未开启（无法连接至服务器）</summary>
+          请联系服主
+        </details></li>
+        <li><details>
+          <summary>您不在白名单内（You are not whitelisted on this server）</summary>
+          请联系有白名单权限的管理员，将您的游戏ID添加到游戏白名单内（服主zkims，binsir，白瑶，Rainboism）
+        </details></li>
+        <li><details>
+          <summary>错误的密码</summary>
+          请再次进入服务器，输入正确的密码
+        </details></li>
+        <li><details>
+          <summary>无法连接至服务器（Connection refused:getsockopt）</summary>
+          服务器IP输错了，重新检查您输入服务器IP是否为正确IP
+        </details></li>
+        <li><details>
+          <summary>客户端和服务器上安装的模组不一致</summary>
+          按照提示安装相应的模组
+        </details></li>
+      </ul>
+      <h2 id="指令">服务器常用指令</h2>
+      <h3 id="登录指令">登陆用指令</h3>
+      <ul>
+        <li>
+          <pre><code>/register 密码 确认密码</code></pre>
+          使用当前ID和密码注册
+        </li>
+        <li>
+          <pre><code>/l 密码</code></pre>
+          登录，服务器有免密登录，登录一次后在一台电脑上一段时间内不需要重新登录
+        </li>
+      </ul>
+      <h3 id="warp指令">warp指令</h3>
+      <ul>
+        <li>
+          <pre><code>/warp list</code></pre>
+          查看所有公共传送点
+        </li>
+        <li>
+          <pre><code>/warp set 传送点名称</code></pre>
+          在该位置设置公共传送点
+        </li>
+        <li>
+          <pre><code>/warp delete 传送点名称</code></pre>
+          删除该公共传送点
+        </li>
+        <li>
+          <pre><code>/warp tp 传送点名称</code></pre>
+          传送到指定公共传送点
+        </li>
+      </ul>
+      <h3 id="home指令">home指令</h3>
+      <ul>
+        <li>
+          <pre><code>/home list</code></pre>
+          查看自己所有设置的家
+        </li>
+        <li>
+          <pre><code>/home set 家名称</code></pre>
+          在您所处的位置位置设置家
+        </li>
+        <li>
+          <pre><code>/home delete 家名称</code></pre>
+          删除指定的家
+        </li>
+        <li>
+          <pre><code>/home tp 家名称</code></pre>
+          传送到指定的家
+        </li>
+      </ul>
+      <h3 id="bal指令">bal指令</h3>
+      <ul>
+        <li>
+          <pre><code>/bal ID</code></pre>
+          查看该玩家的金币数量，若未指定玩家默认查自己的
+        </li>
+      </ul>
+      <h3 id="fly指令">fly指令</h3>
+      <ul>
+        <li>
+          <pre><code>/fly (ID) (true/false)</code></pre>
+          开启/关闭飞行（一般来讲仅需/fly）
+        </li>
+      </ul>
+      <h2 id="qa">新手常见问题</h2>
+      <blockquote>若您认真阅读了上述内容并付诸实践，恭喜您，水平可以与多数玩家协作，以下内容可能会对您的游玩有所帮助</blockquote>
+      <p>注：还是点击展开</p>
+      <ul>
+        <li><details>
+          <summary>问：游戏版本是什么？我能用26.2吗？基岩版能进服务器吗？</summary>
+          答：游戏版本为1.21.11，游戏版本低于1.21.11会导致游戏有大量物品无法正常显示，仅支持Java版
+        </details></li>
+        <li><details>
+          <summary>问：离线能不能进服务器？</summary>
+          答：支持正版，离线以及第三方服务器登录，但尽量使用皮肤站登录
+        </details></li>
+        <li><details>
+          <summary>问：我用Forge或其他模组加载器可以吗？</summary>
+          答：仅支持Fabric
+        </details></li>
+        <li><details>
+          <summary>问：我能加模组吗？</summary>
+          答：凡是未添加新物品的模组/辅助模组，服务器都兼容
+        </details></li>
+        <li><details>
+          <summary>问：明明我是littleskin登录，为什么我进入服务器后我的皮肤没有显示？</summary>
+          答：请添加万用皮肤补丁模组（CustomSkinLoader）
+        </details></li>
+        <li><details>
+          <summary>问：服务器IP多少？</summary>
+          答：43.248.3.136:11451
+        </details></li>
+        <li><details>
+          <summary>问：服务器有传送点吗？</summary>
+          答：具体传送点见QQ群公告
+        </details></li>
+        <li><details>
+          <summary>问：既然是模组服那模组有哪些？</summary>
+          答：群文件中的客户端中有辅助自制的整合包，也有模组列表，愿意自己折腾的可以自己调配
+        </details></li>
+        <li><details>
+          <summary>问：FCL能进吗？</summary>
+          答：若能装上模组列表里的模组应该能进，搜不到可以求助群友
+        </details></li>
+        <li><details>
+          <summary>问：服务器有没有/rtp?</summary>
+          答：目前没有
+        </details></li>
+        <li><details>
+          <summary>问：在服务器该怎么获得金币(经济系统货币)？</summary>
+          答：前往玩家商店出售或击杀生物，目前主城没有收购点
+        </details></li>
+        <li><details>
+          <summary>问：投影mod该怎么使用？</summary>
+          答：默认M键打开菜单，在官方客户端里M键会被世界地图覆盖，需要在按键控制中手动修改;把你的投影文件放到schematics文件夹内，然后点击加载原理图，选中对应的投影文件后即可加载，可以使用木棍调整投影位置，需要先手木棍然后用Ctrl+滚轮把模式调到2，这时点击地面可以移动投影，更详细的教程可以前往B站寻找
+        </details></li>
+        <li><details>
+          <summary>问：为什么我用传送命令一直传送不了？</summary>
+          答：可能有以下原因：传送倒计时期间受到伤害，传送倒计时未结束时使用新的传送命令，未知错误，服务器变成土豆了
+        </details></li>
+        <li><details>
+          <summary>问：这份Q&amp;A是服务器官方的吗？</summary>
+          答：这份Q&amp;A是玩家自己总结的，扩展了一些内容，有需要可以前往群文件寻找官方版本
+        </details></li>
+      </ul>
+    </main>
+  </body>
+</html>

@@ -12,7 +12,9 @@ blockquote {
     border-left-width: 3px;
     padding-left: 1em;
 }
-code {
+code,
+kbd,
+samp {
     font-family: ui-monospace, "Consolas", "SF Mono", Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", monospace;
 }
 a {

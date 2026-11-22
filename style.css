@@ -18,3 +18,6 @@ a {
     color: #0054dd;
     text-decoration: none;
 }
+blockquote {
+    padding-left: 1em;
+}

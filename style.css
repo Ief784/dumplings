@@ -16,6 +16,8 @@ code,
 kbd,
 samp {
     font-family: ui-monospace, "Consolas", "SF Mono", Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", monospace;
+    background-color: #edeef0;
+    border-radius: 4%;
 }
 a {
     color: #0054dd;

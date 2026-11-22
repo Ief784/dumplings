@@ -10,6 +10,7 @@ blockquote {
     border-left-color: #c2c6cf;
     border-left-style: solid;
     border-left-width: 3px;
+    padding-left: 1em;
 }
 code {
     font-family: ui-monospace, "Consolas", "SF Mono", Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", monospace;
@@ -17,7 +18,4 @@ code {
 a {
     color: #0054dd;
     text-decoration: none;
-}
-blockquote {
-    padding-left: 1em;
 }

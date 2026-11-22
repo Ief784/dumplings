@@ -1,3 +1,10 @@
+html {
+    font-family: Avenir, sans-serif;
+    line-height: 1.4;
+}
+body {
+    margin: 1em;
+}
 blockquote {
     color: gray;
     border-left-color: #c2c6cf;
@@ -6,4 +13,8 @@ blockquote {
 }
 code {
     font-family: ui-monospace, "Consolas", "SF Mono", Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", monospace;
+}
+a {
+    color: #0054dd;
+    text-decoration: none;
 }
